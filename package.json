@@ -1,0 +1,125 @@
+{
+  "name": "react-seed",
+  "version": "0.0.8",
+  "repository": "https://github.com/badsyntax/react-seed",
+  "config": {
+    "build_dir": "./build",
+    "dev_port": 8000
+  },
+  "scripts": {
+    "env": "env",
+    "prerelease": "npm test",
+    "prestart": "npm install",
+    "pretest": "npm run lint",
+    "prewebpack": "npm run clean",
+    "clean": "rm -rf $npm_package_config_build_dir && mkdir $npm_package_config_build_dir",
+    "start": "NODE_ENV=development node dev-server",
+    "webpack": "webpack --colors --progress --config ./webpack.config.js",
+    "start-dev-server": "webpack-dev-server --output-pathinfo --inline",
+    "build": "NODE_ENV=production npm run webpack",
+    "lint": "eslint --ext .js --ext .jsx ./app && echo No linting errors.",
+    "test": "jest"
+  },
+  "dependencies": {
+    "classnames": "^1.2.0",
+    "flux": "^2.0.1",
+    "normalize.css": "^3.0.3",
+    "react": "^0.13.1",
+    "textr": "git://github.com/shuvalov-anton/textr",
+    "typographic-copyright": "^1.0.0",
+    "typographic-ellipses": "^1.0.9",
+    "typographic-math-symbols": "^1.0.0",
+    "typographic-quotes": "^1.2.0",
+    "typographic-registered-trademark": "^1.0.0",
+    "typographic-trademark": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.8",
+    "babel-core": "^5.0.2",
+    "babel-jest": "^5.0.0",
+    "babel-loader": "^5.0.0",
+    "babel-runtime": "^5.0.2",
+    "css-loader": "^0.9.1",
+    "eslint": "^0.18.0",
+    "eslint-plugin-react": "^2.0.2",
+    "extract-text-webpack-plugin": "^0.5.0",
+    "file-loader": "^0.8.1",
+    "html-loader": "^0.2.3",
+    "jest-cli": "^0.4.0",
+    "json-loader": "^0.5.1",
+    "lodash": "^3.6.0",
+    "opn": "^1.0.1",
+    "postcss-loader": "^0.3.0",
+    "react-hot-loader": "^1.2.4",
+    "sass-loader": "^0.4.2",
+    "style-loader": "^0.9.0",
+    "template-html-loader": "0.0.3",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.8.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "./jest-preprocessor.js",
+    "testPathDirs": [
+      "./app"
+    ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    },
+    "globals": {
+      "jest": true,
+      "describe": true,
+      "it": true,
+      "expect": true
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "strict": true,
+      "indent": [
+        2,
+        2
+      ],
+      "quotes": [
+        2,
+        "single"
+      ],
+      "react/display-name": 1,
+      "react/jsx-quotes": 1,
+      "react/jsx-no-undef": 1,
+      "react/jsx-sort-props": 1,
+      "react/jsx-uses-react": 1,
+      "react/jsx-uses-vars": 1,
+      "react/no-did-mount-set-state": 1,
+      "react/no-did-update-set-state": 1,
+      "react/no-multi-comp": 1,
+      "react/no-unknown-property": 1,
+      "react/prop-types": 1,
+      "react/react-in-jsx-scope": 1,
+      "react/self-closing-comp": 1,
+      "react/wrap-multilines": 1
+    }
+  }
+}
