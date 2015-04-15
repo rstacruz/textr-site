@@ -1,0 +1,30 @@
+html {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.typograph {
+  background-color: #fafafa;
+  border: solid 1px #eaeaea;
+}
+
+
+.headline {
+  margin: 2rem 0 3rem;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.headline__title {
+  color: black;
+}
+
+.headline__subtitle {
+  color: gray;
+}
+

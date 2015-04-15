@@ -25,6 +25,7 @@
     "flux": "^2.0.1",
     "normalize.css": "^3.0.3",
     "react": "^0.13.1",
+    "react-textarea-autosize": "^1.1.0",
     "textr": "git://github.com/shuvalov-anton/textr",
     "typographic-copyright": "^1.0.0",
     "typographic-ellipses": "^1.0.9",

@@ -1,0 +1,14 @@
+.textr-content {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-family: Georgia, Sans;
+  font-size: 24px;
+  min-height: 500px;
+  padding: 2rem 0;
+  resize: vertical;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
