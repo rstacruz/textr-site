@@ -43,7 +43,7 @@ const plugins = [
     icon: "©",
     name: "copyright",
     description: "Replace alphabetic copyright substitutes ",
-    fn: trademark
+    fn: copyright
   },
 ];
 
