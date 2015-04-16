@@ -6,7 +6,7 @@ import {locale, nextLocale} from '../transformator/index';
 import plugins from '../transformator/plugins';
 
 const localesDict = {
-  'en-us': 'Engilsh',
+  'en-us': 'American Engilsh',
   'ru': 'Русский'
 };
 
