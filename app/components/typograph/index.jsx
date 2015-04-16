@@ -12,18 +12,9 @@ export default class Typograph extends React.Component {
     this.state = { text: '' };
   }
 
-  copyToClipboard(el) {
-    // setTimeout(() => {
-    //   console.log(el);
-    //   let Copy = el.createTextRange();
-    //   Copy.execCommand("Copy");
-    // }, 0);
-  }
-
   handleInput(e) {
     let textarea = e.target;
     let text = createTf()(textarea.value);
-    this.copyToClipboard(textarea);
     this.setState({ text });
   }
 

@@ -5,6 +5,11 @@ import React from 'react';
 import {locale, nextLocale} from '../transformator/index';
 import plugins from '../transformator/plugins';
 
+const localesDict = {
+  'en-us': 'Engilsh',
+  'ru': 'Русский'
+};
+
 export default class Settings extends React.Component {
 
   constructor() {
@@ -17,11 +22,12 @@ export default class Settings extends React.Component {
   }
 
   render() {
+    let locale = localesDict[this.state.locale];
     return (
       <div className="textr-settings">
         <div className="container">
           <div className="locale" onClick={this.toggleLocale.bind(this)}>
-            {this.state.locale}
+            {locale}
           </div>
           {
             plugins.map(plugin => {

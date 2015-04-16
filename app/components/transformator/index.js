@@ -7,7 +7,7 @@ const options = {
   locale: 'en-us'
 }
 
-export const locales = ['en-us', 'ru'];
+export const locales = ['en-us', 'ru']
 
 export function locale(name) {
   return name
